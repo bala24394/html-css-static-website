@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Css Website</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav>
+            <ul class="topnav" id="dropdown-click">
+                <li><img src="ecorp.png" width="40px"></li>
+                <li><a class="active" href="#home"><b>Home</b></a></li>
+                <li><a href="#news"><b>News</b></a></li>
+                <li><a href="#contact"><b>Contact</b></a></li>
+                <li><a href="#about"><b>About</b></a></li>
+                <li class="topnav-right">
+                    <a href="#signup"><b>Sign Up</b></a></li>
+                <li class="topnav-right">
+                    <a href="#signin"><b>Sign In</b></a></li>
+                <li class="dropdown-icon">
+                    <a href="javascript:void(0);" 
+                    onclick="dropdownMenu()">&#9776;</a></li>
+            </ul>
+        </nav>
+        <div class="container" id="section-1-gradient">
+            <div class="row">
+                <div class="col-6">
+                    <div class="leftside-col">
+                        <h1 class="large">Modern Energy Limited</h1>
+                        <h1 class="large">(Unit of Bala Energy Corp.)</h1>
+                    </div>
+                    <form>
+                        <div class="leftside-col">
+                            <h2>Username:</h2>
+                            <input class="inputbox" type="text" 
+                            name="username" placeholder="Username">
+                            <h2>Password:</h2>
+                            <input class="inputbox" type="password" 
+                            name="password" placeholder="Password">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-6">
+                    <div class="rightside-col">
+                        <div class="video-container">
+                            <iframe width="500" height="300" 
+                            src="https://www.youtube.com/embed/fyqDC_AKVgE" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header>
+            <h1 class="section-2-header">The Standard of Modern Energy</h1>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="box">
+                    <div class="icon">
+                        <img src="ecorp.png">
+                    </div>
+                    <label>Staying Connected</label>
+                    <p>Use Text Messaging to Contact Us.
+                        It easy to report a power outage, request a status update on a reported outage, or make billing inquiries from a mobile phone. 
+                        Get started texting REG to "55555".
+                    </p>
+                    </div>
+                    
+                </div>
+                <div class="col-4">
+                    <div class="box">
+                    <div class="icon">
+                        <img src="ecorp.png">
+                    </div>
+                    <label>Surge Assistance</label>
+                    <p>While plug-in surge protectors offer some protection, they can lose effectiveness over time. 
+                        And many insurance policies require deductibles that are higher than the replacement cost. 
+                    </p>
+                    </div>
+                    
+                </div>
+                <div class="col-4">
+                    <div class="box">
+                    <div class="icon">
+                        <img src="ecorp.png">
+                    </div>
+                    <label>Home Repair</label>
+                    <p>There’s never a good time for the pipes in your home to burst or your furnace to break down. 
+                       Our partner HomeServe has been offering customers of FirstEnergy’s utility companies.
+                    </p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button class="learnMore">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        
+       
+
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <article>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Lorem ipsum dolor.
+                        </p>
+                    </article>
+                </div>
+                <div class="col-5">
+                    <div class="grid">
+                        <img src="grid.png">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+       
+        <footer class="footer">
+            <div class="row">
+                <div class="col-3 mobi">
+                    <h1>Company</h1>
+                    <ul>
+                        <li>About</li>
+                        <li>Blog</li>
+                        <li>Careers</li>
+                    </ul>
+                </div>
+                <div class="col-3 mobi">
+                    <h1>Company</h1>
+                    <ul>
+                        <li>About</li>
+                        <li>Blog</li>
+                        <li>Careers</li>
+                    </ul>
+                </div>
+
+                <div class="col-3 mobi">
+                    <h1>Company</h1>
+                    <ul>
+                        <li>About</li>
+                        <li>Blog</li>
+                        <li>Careers</li>
+                    </ul>
+                </div>
+                <div class="col-3 mobi">
+                    <h1>Company</h1>
+                    <ul>
+                        <li>About</li>
+                        <li>Blog</li>
+                        <li>Careers</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+
+    <script>
+    function dropdownMenu(){
+        var x= document.getElementById("dropdown-click");
+        if (x.className==="topnav"){
+            x.className += " responsive"; 
+            /*change topnav to topnav.responsive*/
+        }
+        else{
+        x.className = "topnav";
+        }
+    } 
+    
+    </script>
+    </body>
+</html>
